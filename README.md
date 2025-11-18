@@ -194,33 +194,46 @@ Complete synthesis including:
 
 ### Component Studies
 
-**Study 1 (HarmBench - 2,240 tests):**
-- [VENICE_UNCENSORED_DEFENSE_RESULTS.md](VENICE_UNCENSORED_DEFENSE_RESULTS.md) (19KB) - Venice direct attacks
-- [PAIR_DEFENSE_COMPLETE.md](PAIR_DEFENSE_COMPLETE.md) (23KB) - Venice PAIR attacks, RLHF judge failure
-- [GPT_GCG_DEFENSE_RESULTS.md](GPT_GCG_DEFENSE_RESULTS.md) (14KB) - GPT-3.5 GCG attacks
-- [GCG_DEFENSE_RESULTS.md](GCG_DEFENSE_RESULTS.md) (8KB) - Llama-3.3 GCG attacks
-- [GitHub: seed-4.1-lords-prayer-kernel](https://github.com/davfd/seed-4.1-lords-prayer-kernel) - Mistral-7B-Instruct
+**All studies available in repository:**
+- [VENICE_UNCENSORED_DEFENSE_RESULTS.md](VENICE_UNCENSORED_DEFENSE_RESULTS.md) - Venice direct attacks (19KB)
+- [PAIR_DEFENSE_COMPLETE.md](PAIR_DEFENSE_COMPLETE.md) - Venice PAIR attacks, RLHF judge failure (23KB)
+- [GPT_GCG_DEFENSE_RESULTS.md](GPT_GCG_DEFENSE_RESULTS.md) - GPT-3.5 GCG attacks (14KB)
+- [GCG_DEFENSE_RESULTS.md](GCG_DEFENSE_RESULTS.md) - Llama-3.3 GCG attacks (8KB)
+- [COMBINED_GCG_ANALYSIS.md](COMBINED_GCG_ANALYSIS.md) - Cross-architecture GCG validation (13KB)
+- [COMPLETE_DEFENSE_ANALYSIS.md](COMPLETE_DEFENSE_ANALYSIS.md) - Multi-attack synthesis (18KB)
 
-**Study 2 (Cross-Architecture - 8,632 tests):**
-- [GitHub: foundation-alignment-cross-architecture](https://github.com/davfd/foundation-alignment-cross-architecture)
-- Full repository with raw data, statistical analysis, replication code
-- Docker and Google Colab configurations provided
+**Test scripts:**
+- `HarmBenchVeniceUncensored.py` - Venice testing suite
+- `PAIRAttacksVeniceUncensored.py` - PAIR attack implementation
+- `GCGAttacksGPT.py` - GPT-3.5 GCG testing
+- `GCGAttacksLlama3.py` - Llama-3.3 GCG testing
 
-**Synthesis documents:**
-- [COMBINED_GCG_ANALYSIS.md](COMBINED_GCG_ANALYSIS.md) (13KB) - Cross-architecture GCG validation
-- [COMPLETE_DEFENSE_ANALYSIS.md](COMPLETE_DEFENSE_ANALYSIS.md) (18KB) - Multi-attack synthesis
+**Data files:**
+- `harmbench_behaviors_text_all.csv` (195KB)
+- `harmbench_behaviors_text_test.csv` (158KB)
+- `harmbench_behaviors_text_val.csv` (38KB)
+- Result folders with complete outputs
 
-### Raw Data
 
-**CSV files**: 3 HarmBench datasets (195KB, 158KB, 38KB)
+### Repository Structure
 
-**Result folders**: 4 directories with complete test outputs
-- `pair_results_three_way/` - Three-way PAIR comparison
-- `harmbench_results_gptgcg/` - GPT GCG results
-- `harmbench_results_gcg_llama370b/` - Llama GCG results
-- `harmbench_results_2%ASR_multimodalneedsfixing/` - Multimodal results
+**Root directory**: https://github.com/davfd/Foundation-Alignment-Universal-AI-Safety-Mechanism
 
-**Archive**: `archive_intermediate/` - Intermediate work products (superseded by final documents)
+**Documentation** (markdown files):
+- Master validation document
+- Individual study reports
+- Cross-architecture analysis
+- Complete synthesis
+
+**Test Scripts** (Python):
+- HarmBench test suite
+- PAIR attack implementation
+- GCG attack scripts (GPT, Llama)
+
+**Data**:
+- HarmBench CSV datasets (3 files)
+- Result folders (4 directories with complete outputs)
+- Archive of intermediate work products
 
 ---
 
@@ -283,19 +296,21 @@ Complete synthesis including:
 
 ## Replication
 
-**Complete replication materials available**:
-- [GitHub: seed-4.1-lords-prayer-kernel](https://github.com/davfd/seed-4.1-lords-prayer-kernel)
-- [GitHub: foundation-alignment-cross-architecture](https://github.com/davfd/foundation-alignment-cross-architecture)
+**Complete replication materials**: https://github.com/davfd/Foundation-Alignment-Universal-AI-Safety-Mechanism
 
-**Includes**:
-- Full prompt specifications (SEED v4.0/4.1, Foundation Seed v2.6)
-- All test datasets (10,872 scenarios)
-- Complete statistical analysis scripts
-- Docker configuration
-- Google Colab notebooks
-- Raw result transcripts
+**Repository includes**:
+- Master validation document (SEED_COMPLETE_VALIDATION.md)
+- Individual study reports (6 documents)
+- Python test scripts (4 implementations)
+- Full HarmBench datasets (10,872 scenarios)
+- Complete result outputs (4 folders)
+- Statistical analysis and validation
 
-**Estimated cost**: ~$865 USD across all models
+**Additional resources**:
+- Cross-architecture study: https://github.com/davfd/foundation-alignment-cross-architecture
+- Lords Prayer Kernel variant: https://github.com/davfd/seed-4.1-lords-prayer-kernel
+
+**Estimated cost**: ~$865 USD to replicate all tests
 **Timeline**: 12-18 hours with parallel processing
 
 ---
@@ -304,9 +319,7 @@ Complete synthesis including:
 
 **Foundation**: κ = Φ ≡ Φ = "I AM THAT I AM"
 
-**GitHub**:
-- https://github.com/davfd/seed-4.1-lords-prayer-kernel
-- https://github.com/davfd/foundation-alignment-cross-architecture
+**GitHub**: https://github.com/davfd/Foundation-Alignment-Universal-AI-Safety-Mechanism
 
 **Statistical validation**:
 - Per-model significance: p<10⁻¹⁵ (binomial test, all 10 models)
